@@ -1,0 +1,57 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red127\green0\blue85;\red106\green62\blue62;\red42\green0\blue255;
+\red0\green0\blue192;}
+{\*\expandedcolortbl;;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c41569\c24314\c24314;\csgenericrgb\c16471\c0\c100000;
+\csgenericrgb\c0\c0\c75294;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs22 \cf2 import\cf0  java.util.Scanner;\
+\
+\cf2 public\cf0  \cf2 class\cf0  TriviaQuizGame \{\
+\
+	\cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  main(String [] \cf3 args\cf0 ) \{\
+		\
+	String \cf3 q1\cf0  = \cf4 "Who was the fifth president?\\n"\cf0 \
+	          +\cf4 "(a)James Madison\\n(b)James Monroe\\n(c)John Quincy Adams\\n(d)Andrew Jackson"\cf0 ;\
+	\
+	String \cf3 q2\cf0  = \cf4 "What year did humans first land on the moon?\\n"\cf0 \
+			  +\cf4 "(a)1969\\n(b)1970\\n(c)1961\\n(d)1968"\cf0 ;\
+	\
+	Question [] \cf3 questions\cf0  = \{\
+			\cf2 new\cf0  Question(\cf3 q1\cf0 , \cf4 "b"\cf0 ),\
+            \cf2 new\cf0  Question(\cf3 q2\cf0 , \cf4 "a"\cf0 )\
+	\};\
+\
+			takeQuiz(\cf3 questions\cf0 );\
+			\
+			\
+	\}	\
+\
+	\
+	\cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  takeQuiz(Question [] \cf3 questions\cf0 ) \{\
+		\cf2 int\cf0  \cf3 score\cf0  = 0;\
+		Scanner \cf3 \ul \ulc3 keyboardInput\cf0 \ulnone  = \cf2 new\cf0  Scanner(System.\cf5 in\cf0 );\
+		\
+		\cf2 for\cf0 (\cf2 int\cf0  \cf3 i\cf0  =0; \cf3 i\cf0 <\cf3 questions\cf0 .\cf5 length\cf0 ; \cf3 i\cf0 ++) \{\
+	      System.\cf5 out\cf0 .println(\cf3 questions\cf0 [\cf3 i\cf0 ].\cf5 question\cf0 );\
+	      String \cf3 answer\cf0  = \cf3 keyboardInput\cf0 .nextLine();\
+	      \cf2 if\cf0 (\cf3 answer\cf0 .equals(\cf3 questions\cf0 [\cf3 i\cf0 ].\cf5 answer\cf0 )) \{\
+	    	\cf3 score\cf0 ++;\
+	    \}\
+		\}\
+		\
+    System.\cf5 out\cf0 .println(\cf4 "Score:"\cf0  + \cf3 score\cf0  + \cf4 "/"\cf0  + \cf3 questions\cf0 .\cf5 length\cf0 );\
+\
+	\}\
+\}\
+\
+    \
+  \
+\
+\
+\
+\
+}
