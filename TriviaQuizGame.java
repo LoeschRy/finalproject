@@ -35,7 +35,7 @@ public class TriviaQuizGame {
 	String q10 = "\nQuestion 10:\n\nTrue or False: The Patriots have more Superbowl wins than everyone else\n"
 			   + "(a)True\n(b)False";
 	
-	String q11 ="\nQuestion 11:\n\nWho plays John Wick in the critically acclaimed film triliogy of John Wick?\n"
+	String q11 ="\nQuestion 11:\n\nWho plays John Wick in the critically acclaimed film triliogy 'John Wick'?\n"
 			   +"(a)Vin Diesel\n(b)Tom Cruise\n(c)Keanu Reeves\n(d)Abraham Lincoln";
 	
 	String q12 ="\nQuestion 12:\n\nHow many representatives are there in the United States House of Representatives?\n"
@@ -47,7 +47,7 @@ public class TriviaQuizGame {
 	String q14 ="\nQuestion 14:\n\nWho was the 26th president?\n"
 			   +"(a)Benjamin Harisson\n(b)James Garfield\n(c)Theodore Roosevlet\n(d)Franklin Delano Rooselvelt";
 	
-   String q15 ="\nQuestion 15:\n\nWhat city is dubbbed the Motor City?\n"
+   String q15 ="\nQuestion 15:\n\nWhat city is dubbbed the 'Motor City'?\n"
    		      +"(a)Alambama\n(b)Bel Air\n(c)Chicago\n(d)Detroit";
    
    String q16 ="\nQuestion 16:\n\nHow many countries are in the United Nations?\n"
@@ -82,7 +82,7 @@ public class TriviaQuizGame {
             new Question(q11, "c"),
             new Question(q12, "a"),
             new Question(q13, "b"),
-            new Question(q14, "d"),
+            new Question(q14, "c"),
             new Question(q15, "d"),
             new Question(q16, "a"),
             new Question(q17, "b"),
@@ -100,35 +100,28 @@ public class TriviaQuizGame {
 	
 	public static void takeQuiz(Question [] questions) {
 		int score = 0;
-		Scanner keyboardInput = new Scanner(System.in);
 		
+		Scanner KeyboardInput = new Scanner(System.in);
 		for(int i =0; i<questions.length; i++) {
 	      System.out.println(questions[i].question);
-	      String answer = keyboardInput.nextLine();
+	      String answer = KeyboardInput.nextLine();
 	      if(answer.equals(questions[i].answer)) {
 	    	score++;
 	    }
 		}
 		
-    System.out.println("Score:" + score + "/" + questions.length);
-    System.out.println("\nAnswers:\n\n1)\n2)\n3)\n4)\n5)\n6)\n7)\n8)\n9)\n10)\n11)\n12)\n13)\n14)\n15)\n16)\n17)\n18)\n19)\n20)\n21)");
+    System.out.println("\n\nSCORE:" + score + "/" + questions.length);
+    if(score >=15) {
+    	System.out.println("\n\nVERY GOOD JOB!");
+    }else {
+    System.out.println("\nTOUGH LUCK: TIME TO REVIEW!");
+    }
+    System.out.println("\n\n\nAnswers:\n\n1)b\n2)a\n3)c\n4)a\n5)a\n6)d\n7)b\n8)d\n9)b\n10)b\n11)c\n12)a\n13)b\n14)c\n15)d\n16)a\n17)b\n18)c\n19)c\n20)d\n21)a");
+    System.out.println("\n\nSCROLL UP TO SEE SCORE");
 	}
-    public static void celebrateScore(int n, int score) {
-    	int n1 = score;
-    	
-    	if(n1>=5) {
-    	System.out.println("Very nice job");
-    	
-    	}else {
+   
     		
-    	}
-    	if(n1<5) {
-        System.out.println("Better luck next time");
-    		
-    
-
-	}
-}}
+}
 
     
   
