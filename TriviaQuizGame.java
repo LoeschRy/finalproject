@@ -59,7 +59,7 @@ public class TriviaQuizGame {
    String q18 ="\nQuestion 18:\n\nHow many NBA Finals have the Chicago Bulls won?\n"
 		      +"(a)0\n(b)10\n(c)6\n(d)3";
    
-   String q19 ="\nQuestion 19:\n\nWhat is richest company in the world?\n"
+   String q19 ="\nQuestion 19:\n\nWhich is richest company?\n"
 		      +"(a)Microsoft\n(b)AT&T\n(c)Walmart\n(d)Sony";
    
    String q20 ="\nQuestion 20:\n\nWhat is the area code of Detroit, MI?\n"
