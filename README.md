@@ -7,7 +7,7 @@ TrivaQuizGame is a game that I made using eclipse. The purpose of the game is si
 
 ### Difficulties or opportunities you encountered along the way.
 
-The toughest part was making it so the user could actually have input for the questions. In Processing there was a keyPressed method that could be used for user input but I wasn't able to figure that out. Instead, I went to Eclipse to use the scanner class because the scanner class couldn't be used in Processing. Being able to use the scanner class in Eclipse was a lot easier for me, and in the end I was able to figure it out so that the user could actually answer the questions.
+The toughest part was making it so the user could actually have input for the questions. In Processing there was a keyPressed method that could be used for user input but I wasn't able to figure that out. Instead, I went to Eclipse to use the scanner class because the scanner class couldn't be used in Processing. Being able to use the scanner class in Eclipse was a lot easier for me, and in the end I was able to figure it out so that the user could actually answer the questions. I couldn't figure out how to run an animation on eclipse because it was different than the way to do it in processng. Instead I printed a phrase using an if statement; if the score was 70% or above it printed a congratulatory statement, and if the score was below 70% it printed a statement of condolence.
 
 ### Most interesting piece of your code and explanation for what it does.
 
